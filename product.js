@@ -6,58 +6,58 @@ const quantityInput = document.getElementById("quantity");
 const productDisplay = document.getElementById("productDisplay");
 const messageDiv = document.getElementById("message");
 
-const productData = [
-  {
-    imageUrl:
-      "https://www.electromart.com.gh/product/philips-steam-iron-gc1742-46-red-2000w/#&gid=1&pid=1",
-    name: "Iron",
-    description: "Quality product for smooth clothes.",
-price: 50,
-    brand: "SHEIN",
-  },
-  {
-    name: "Fridge",
-    description: "Quality product for keeping food fresh.",
-    imageUrl:
-      "https://www.caple.co.uk/online-shop/appliances/refrigeration/integrated-refrigeration/rir125/",
-    price: 70,
-    brand: "SHEIN",
-  },
-  {
-    name: "Rice Cooker",
-    description: "Quality product for perfectly cooked rice.",
-    imageUrl: "https://m.media-amazon.com/images/I/71ZvJjxR+xL._AC_SL1500_.jpg",
-    price: 40,
-    brand: "Mr Price",
-  },
-  {
-    name: "Knife Set",
-    description: "Quality product for all your cutting needs.",
-    imageUrl:
-      "https://www.greenpan.us/products/titanium-cutlery-ultimate-16-piece-knife-block-set-1",
-    price: 20,
-    brand: "SHEIN",
-  },
-];
+// const productData = [
+//   {
+//     imageUrl:
+//       "https://www.electromart.com.gh/product/philips-steam-iron-gc1742-46-red-2000w/#&gid=1&pid=1",
+//     name: "Iron",
+//     description: "Quality product for smooth clothes.",
+// price: 50,
+//     brand: "SHEIN",
+//   },
+//   {
+//     name: "Fridge",
+//     description: "Quality product for keeping food fresh.",
+//     imageUrl:
+//       "https://www.caple.co.uk/online-shop/appliances/refrigeration/integrated-refrigeration/rir125/",
+//     price: 70,
+//     brand: "SHEIN",
+//   },
+//   {
+//     name: "Rice Cooker",
+//     description: "Quality product for perfectly cooked rice.",
+//     imageUrl: "https://m.media-amazon.com/images/I/71ZvJjxR+xL._AC_SL1500_.jpg",
+//     price: 40,
+//     brand: "Mr Price",
+//   },
+//   {
+//     name: "Knife Set",
+//     description: "Quality product for all your cutting needs.",
+//     imageUrl:
+//       "https://www.greenpan.us/products/titanium-cutlery-ultimate-16-piece-knife-block-set-1",
+//     price: 20,
+//     brand: "SHEIN",
+//   },
+// ];
 
-function showMessage(msg, type) {
-  messageDiv.textContent = msg;
-  messageDiv.style.display = "block";
+// function showMessage(msg, type) {
+//   messageDiv.textContent = msg;
+//   messageDiv.style.display = "block";
 
-  if (type === "error") {
-    messageDiv.style.backgroundColor = "#f8d7da";
-    messageDiv.style.color = "#721c24";
-    messageDiv.style.border = "1px solid #f5c6cb";
-  } else if (type === "success") {
-    messageDiv.style.backgroundColor = "#d4edda";
-    messageDiv.style.color = "#155724";
-    messageDiv.style.border = "1px solid #c3e6cb";
-  }
+//   if (type === "error") {
+//     messageDiv.style.backgroundColor = "#f8d7da";
+//     messageDiv.style.color = "#721c24";
+//     messageDiv.style.border = "1px solid #f5c6cb";
+//   } else if (type === "success") {
+//     messageDiv.style.backgroundColor = "#d4edda";
+//     messageDiv.style.color = "#155724";
+//     messageDiv.style.border = "1px solid #c3e6cb";
+//   }
 
-  setTimeout(() => {
-    messageDiv.style.display = "none";
-  }, 3000);
-}
+//   setTimeout(() => {
+//     messageDiv.style.display = "none";
+//   }, 3000);
+// }
 
 function displayProducts() {
   productDisplay.innerHTML = "";
