@@ -1,0 +1,163 @@
+body {
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  background-color: #f4f7f6; 
+  display: flex;
+  justify-content: center; 
+  padding: 20px; 
+  box-sizing: border-box; 
+  min-height: 70vh; 
+}
+
+.container {
+  display: flex; 
+  gap: 50px; 
+  width: 80%; 
+  max-width: 500px; 
+  background-color: #ffffff; 
+  border-radius: 12px; 
+  box-shadow: 0 8px 9px rgba(0, 0, 0, 0.1); 
+  padding: 30px; 
+}
+
+.left-section,
+.right-section {
+  flex: 1; 
+  padding: 25px; 
+  border-radius: 12px; 
+  background-color: #ffffff; 
+  border: 1px solid #e0e0e0; 
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.03); 
+}
+
+.left-section {
+  
+  background-color: #fefefe; 
+}
+
+.right-section {
+  background-color: #fefefe; 
+}
+
+h2,
+h3 {
+  color: #333; 
+  margin-top: 0; 
+  margin-bottom: 25px; 
+  text-align: center; 
+  padding-bottom: 10px; 
+  border-bottom: 3px solid #007bff; 
+  display: inline-block; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+form {
+  display: flex; 
+  flex-direction: column; 
+  gap: 12px; 
+}
+
+label {
+  font-weight: bold; 
+  color: #555; 
+  margin-bottom: 5px; /* Space between label and input */
+  display: block; /* Ensures label takes its own line */
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 6px; /* Slightly rounded input fields */
+  font-size: 1rem; 
+  box-sizing: border-box; /* Include padding in width */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus effect */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Soft blue glow on focus */
+  outline: none; /* Remove default outline */
+}
+
+textarea {
+  min-height: 90px; /* Minimum height for textarea */
+  resize: vertical; 
+}
+
+button[type="submit"] {
+  background-color: #007bff; /* Vibrant blue button */
+  color: white; /* White text */
+  padding: 12px 200px; /* Ample padding */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded button */
+  font-size: 1.6rem; /* Larger font size for button text */
+  cursor: pointer; /* Change cursor to a hand on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  align-self: flex-start; /* Align button to the start of the flex container */
+  margin-top: 10px; 
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; 
+  transform: translateY(-2px);
+}
+
+#productDisplay {
+  padding: 15px;
+  border-radius: 8px;
+  /* min-height: 90px; */
+  display: flex;
+  background-color: #fdfdfd;
+  align-items: center;
+  gap: 15px 3px;
+  flex-direction: columm;
+}
+
+#productDisplay p {
+  color: #888;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #eee;
+  padding: 10px; 
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.product-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-item-details {
+  flex-grow: 1;
+}
+
+.product-item-details h4 {
+  margin: 0 0 5px 0;
+  color: #444;
+}
+
+.product-item-details p {
+  margin: 0 0 3px 0;
+  color: #666;
+  font-size: 0.9em;
+  padding-bottom: 30px;
+}
